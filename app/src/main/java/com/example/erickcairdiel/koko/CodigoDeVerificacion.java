@@ -23,6 +23,7 @@ public class CodigoDeVerificacion extends AppCompatActivity
             {
                 Intent siguientePantalla = new Intent(CodigoDeVerificacion.this,RdatosUsuarioGeneral.class);
                 startActivity(siguientePantalla);
+
             }
         });
     }
