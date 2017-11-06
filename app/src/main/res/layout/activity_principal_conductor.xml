@@ -8,18 +8,22 @@
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView2"
-        android:layout_width="388dp"
-        android:layout_height="480dp"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:layout_width="447dp"
+        android:layout_height="594dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-3dp" />
 
     <Button
         android:id="@+id/btnRegistrarRuta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="32dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:background="@color/colorAccent"
         android:text="Registrar Ruta"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="8dp" />
 </android.support.constraint.ConstraintLayout>
