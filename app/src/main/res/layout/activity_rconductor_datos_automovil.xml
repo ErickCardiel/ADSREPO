@@ -6,86 +6,151 @@
     android:layout_height="match_parent"
     tools:context="com.example.erickcairdiel.koko.RConductorDatosAutomovil">
 
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Marca"
-        android:layout_marginLeft="16dp" />
 
     <EditText
-        android:id="@+id/editText10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txt_marca"
+        android:layout_width="214dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="181dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText7"
-        tools:text="Modelo"
-        android:layout_marginLeft="16dp" />
-
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="59dp"
-        android:layout_height="34dp"
-        android:layout_marginEnd="256dp"
-        android:layout_marginTop="180dp"
-        android:ems="10"
-        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="256dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="36dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
-        android:layout_marginStart="16dp"
-        android:text="Año"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_marcaL" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="196dp"
+    <EditText
+        android:id="@+id/txt_modelo"
+        android:layout_width="214dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="181dp"
         android:layout_marginStart="16dp"
-        android:text="Carga una imagen de perfil"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modeloL" />
 
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
+        android:id="@+id/txt_datos"
+        android:layout_width="248dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="Datos del automóvil"
+        android:text="@string/datos_del_autom_vil"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_marcaL"
+        android:layout_width="57dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/marca"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="84dp" />
+        android:layout_marginRight="300dp"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/txt_modeloL"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/modelo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_marca"
+        android:layout_marginRight="300dp"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/txt_matriculaL"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/matricula"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_modelo"
+        android:layout_marginRight="300dp"
+        android:layout_marginLeft="35dp" />
+
+    <EditText
+        android:id="@+id/txt_matricula"
+        android:layout_width="214dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_matriculaL"
+        android:layout_marginRight="181dp"
+        android:layout_marginLeft="16dp" />
+
+    <ImageView
+        android:id="@+id/img_auto"
+        android:layout_width="126dp"
+        android:layout_height="118dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_matricula"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:layout_marginRight="70dp"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/imbtn_cargar"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_auto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_matricula"
+        app:srcCompat="@android:drawable/ic_menu_upload_you_tube"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="59dp"
+        android:contentDescription="@string/todo" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:text=">"
+        android:id="@+id/btn_continuar"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/continuar"
+        android:drawableStart="@drawable/continuar"
+        android:text="@string/btn_Continuar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="8dp" />
+        tools:targetApi="lollipop"
+        android:layout_marginRight="40dp" />
+
 </android.support.constraint.ConstraintLayout>

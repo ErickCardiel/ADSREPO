@@ -56,6 +56,7 @@
             android:name=".MainConductor"
             android:exported="true"
             android:label="@string/title_activity_main_conductor" />
+        <activity android:name=".contrasena"></activity>
     </application>
 
 </manifest>

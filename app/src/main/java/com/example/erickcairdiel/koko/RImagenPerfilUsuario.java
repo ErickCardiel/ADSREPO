@@ -9,7 +9,7 @@ import android.widget.Button;
 public class RImagenPerfilUsuario extends AppCompatActivity
 {
 
-    Button siguiente;
+    Button continuar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -17,15 +17,16 @@ public class RImagenPerfilUsuario extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rimagen_perfil_usuario);
 
-        siguiente = (Button)findViewById(R.id.btnSiguiente);
-        siguiente.setOnClickListener(new View.OnClickListener()
-        {
+        continuar = findViewById(R.id.btn_continuar);
+        continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
             {
-                Intent siguientePantalla = new Intent(RImagenPerfilUsuario.this,RMetodoDePago.class);
-                startActivity(siguientePantalla);
+                Intent continuar = new Intent(RImagenPerfilUsuario.this,RMetodoDePago.class);
+                startActivity(continuar);
+
             }
         });
+
     }
 }

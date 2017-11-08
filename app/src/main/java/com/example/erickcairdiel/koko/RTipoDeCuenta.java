@@ -8,15 +8,16 @@ import android.widget.Button;
 
 public class RTipoDeCuenta extends AppCompatActivity {
 
-    Button conductor,estudiante;
+    Button conductor;
+    Button estudiante;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rtipo_de_cuenta);
 
-        conductor = (Button)findViewById(R.id.btnConductor);
-        estudiante = (Button)findViewById(R.id.btnEstudiante);
+        conductor = findViewById(R.id.btnConductor);
+        estudiante = findViewById(R.id.btnEstudiante);
 
 
         conductor.setOnClickListener(new View.OnClickListener() {
@@ -36,5 +37,7 @@ public class RTipoDeCuenta extends AppCompatActivity {
                 startActivity(siguientePantalla2);
             }
         });
+
+
     }
 }

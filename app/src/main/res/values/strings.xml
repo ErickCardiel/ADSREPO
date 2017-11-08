@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Uber Universidad</string>
 
     <!--Strings de la pantalla Ajustes de Transporte!-->
     <string name="title_activity_ajustes_transporte">ajustesTransporte</string>
@@ -12,6 +11,58 @@
     <string name="OFF">OFF</string>
     <string name="Foto">Foto</string>
     <string name="title_activity_settings">Settings</string>
+
+    <!--INCICIO SESION Y REGISTRO-->
+    <string name="app_name">UBER UNIVERSIDAD</string>
+    <string name="btn_Continuar"><![CDATA[>]]></string>
+    <string name="txt_IngresarL">Ingresa el código de 4 digitos enviado al +52–664-xxx-xx-xx</string>
+    <string name="btn_iniciarSesion">Iniciar Sesion</string>
+    <string name="btn_registrar">Registro</string>
+    <string name="txt_SeleccionaOpc">Seleciona una opción</string>
+    <string name="btn_continuar"><![CDATA[>]]></string>
+    <string name="ingrese_numero_de_tel_fono_m_vil">Ingrese numero de teléfono móvil</string>
+    <string name="_52">+52</string>
+    <string name="ingresa_tu_numero_de_telefono_movil">Ingresa tu numero de telefono movil</string>
+    <string name="cont"><![CDATA[>]]></string>
+    <string name="correo_electronico">Correo electronico:</string>
+    <string name="ingresa_la_contrase_a_para_tu_cuenta">Ingresa la contraseña para tu cuenta:</string>
+    <string name="ingresa_tu_nombre_completo">Ingresa tu nombre completo:</string>
+    <string name="nombre_apellido">Nombre Apellido</string>
+    <string name="reg"><![CDATA[<]]></string>
+    <string name="nombre_apellido1">Nombre           Apellido</string>
+    <string name="selecciona_una_imagen_de_perfil">Selecciona una imagen de perfil</string>
+    <string name="_"><![CDATA[<]]></string>
+    <string name="cargar">Cargar</string>
+    <string name="agrega_un_m_todo_de_pago_a_tu_cuenta">Agrega un método de pago a tu cuenta</string>
+    <string name="al_continuar_sin_agregar_un_m_todo_de_pago_deber_s_realizar_los_pagos_del_transporte_en_efectivo">Al continuar sin agregar un método de pago deberás realizar los pagos del transporte en efectivo.</string>
+    <string name="tarjeta_de_cr_dito_d_bito">Tarjeta de crédito/débito</string>
+    <string name="tarjeta_de_credito_debito">Tarjeta de Crédito/Débito</string>
+    <string name="conductor">Conductor</string>
+    <string name="selecciona_el_tipo_de_cuenta_a_crear">Selecciona el tipo de cuenta a crear</string>
+    <string name="estudiante">Estudiante</string>
+    <string name="ingrese_los_datos_de_su_tarjeta">Ingrese los datos de su tarjeta</string>
+    <string name="numero_de_tarjeta_16_digitos">Numero de tarjeta (16 digitos)</string>
+    <string name="c_digo_de_seguridad">Código de seguridad</string>
+    <string name="a_o">Año</string>
+    <string name="mes">Mes</string>
+    <string name="caducidad">Caducidad</string>
+    <string name="codigo_de_seguridad">Código de Seguridad</string>
+    <string name="anio">Año</string>
+    <string name="mess">Mes</string>
+    <string name="datos_del_autom_vil">Datos del automóvil</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string name="matricula">Matricula</string>
+    <string name="todo">TODO</string>
+    <string name="buscar">Buscar</string>
+    <string name="ingresa_la_contrase_a_de_tu_cuenta">Ingresa la contraseña de tu cuenta:</string>
+    <string name="asientos">Asientos</string>
+    <string name="registrar_ruta">Registrar Ruta</string>
+    <string name="datos_de_ruta">Datos de Ruta</string>
+    <string name="cancelar1">Cancelar</string>
+    <string name="activar1">ACTIVAR</string>
+    <string name="tarjeta_de_cr_dito_d_bito1">Tarjeta de crédito/débito</string>
+
 
     <!-- Strings related to Settings -->
 

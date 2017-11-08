@@ -8,14 +8,16 @@ import android.widget.Button;
 
 public class IniciarSesionRegistro extends AppCompatActivity {
 
-    Button iniciarSesion,registrarse;
+    Button iniciarSesion;
+    Button registrarse;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iniciar_sesion_registro);
 
-        registrarse = (Button)findViewById(R.id.btnRegistro);
+        registrarse = findViewById(R.id.btn_Registrar);
         registrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -24,5 +26,18 @@ public class IniciarSesionRegistro extends AppCompatActivity {
                 startActivity(nuevo2);
             }
         });
+
+        iniciarSesion = findViewById(R.id.btn_IniciarSesion);
+        iniciarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent iniciarSesion = new Intent(IniciarSesionRegistro.this,IngreseNumeroTelefonoMovil.class);
+                startActivity(iniciarSesion);
+            }
+        });
+
+
+
     }
 }

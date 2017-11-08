@@ -7,29 +7,61 @@
     tools:context="com.example.erickcairdiel.koko.IniciarSesionRegistro">
 
     <Button
-        android:id="@+id/btnRegistro"
+        android:id="@+id/btn_Registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="268dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="160dp"
-        android:text="Registro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnIniciarSesion"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginBottom="232dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Iniciar Sesion"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/registrar"
+        android:drawableStart="@drawable/registrar"
+        android:text="@string/btn_registrar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/btn_IniciarSesion"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:drawableLeft="@drawable/iniciar"
+        android:backgroundTint="#ffffff"
+        android:text="@string/btn_iniciarSesion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,UnusedAttribute"
+        android:drawableStart="@drawable/iniciar" />
+
+    <TextView
+        android:id="@+id/txt_SeleccionOp"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/txt_SeleccionaOpc"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_IniciarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginRight="107dp"
+        android:layout_marginLeft="113dp"
+        />
+
 </android.support.constraint.ConstraintLayout>

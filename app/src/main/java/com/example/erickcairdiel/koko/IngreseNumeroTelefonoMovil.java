@@ -7,21 +7,22 @@ import android.view.View;
 import android.widget.Button;
 
 public class IngreseNumeroTelefonoMovil extends AppCompatActivity {
-    Button siguiente;
 
+    Button continuar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingrese_numero_telefono_movil);
 
-        siguiente = (Button)findViewById(R.id.btnSiguiente);
-        siguiente.setOnClickListener(new View.OnClickListener() {
+        continuar = findViewById(R.id.btn_continuar);
+        continuar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
+                Intent continuar = new Intent(IngreseNumeroTelefonoMovil.this,CodigoDeVerificacion.class);
+                startActivity(continuar);
 
-                Intent siguientePantalla = new Intent(IngreseNumeroTelefonoMovil.this,CodigoDeVerificacion.class);
-                startActivity(siguientePantalla);
             }
         });
 

@@ -10,23 +10,16 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
-        android:text="Agrega un método de pago a tu cuenta"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="48dp" />
-
-    <Button
-        android:id="@+id/btnSiguiente"
-        android:layout_width="56dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:text=">"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/agrega_un_m_todo_de_pago_a_tu_cuenta"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
@@ -34,35 +27,50 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Al continuar sin agregar un método de pago deberás realizar"
+        android:layout_marginTop="192dp"
 
+        android:text="@string/al_continuar_sin_agregar_un_m_todo_de_pago_deber_s_realizar_los_pagos_del_transporte_en_efectivo"
         android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="309dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="19dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="12dp"
-
-        android:text="los pagos del transporte en efectivo."
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        android:layout_marginLeft="48dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTarjeta"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnTarjeta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:text="Tarjeta de crédito/débito"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/tarjeta"
+        android:drawableStart="@drawable/tarjeta"
+        android:text="@string/tarjeta_de_credito_debito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:layout_marginLeft="60dp" />
+        tools:targetApi="lollipop"
+        tools:text=" Tarjeta de Crédito/Débito" />
+
+    <Button
+        android:id="@+id/btn_continuar"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/continuar"
+        android:drawableStart="@drawable/continuar"
+        android:text="@string/btn_Continuar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="lollipop"
+        android:layout_marginRight="40dp" />
 
 </android.support.constraint.ConstraintLayout>

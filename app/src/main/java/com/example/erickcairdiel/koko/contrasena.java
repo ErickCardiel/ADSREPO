@@ -6,22 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class RdatosUsuarioGeneral extends AppCompatActivity
-{
+public class contrasena extends AppCompatActivity {
 
     Button continuar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rdatos_usuario_general);
+        setContentView(R.layout.activity_contrasena);
 
         continuar = findViewById(R.id.btn_continuar);
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
             {
-                Intent continuar = new Intent(RdatosUsuarioGeneral.this,RImagenPerfilUsuario.class);
+                Intent continuar = new Intent(contrasena.this,PrincipalEstudiante.class);
                 startActivity(continuar);
 
             }
