@@ -19,7 +19,7 @@ public class RConductorDatosAutomovil extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent continuar = new Intent(RConductorDatosAutomovil.this,PrincipalConductor.class);
+                Intent continuar = new Intent(RConductorDatosAutomovil.this,MainConductor.class);
                 startActivity(continuar);
 
             }
