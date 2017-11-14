@@ -33,7 +33,7 @@ public class RTipoDeCuenta extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent siguientePantalla2 = new Intent(RTipoDeCuenta.this,PrincipalEstudiante.class);
+                Intent siguientePantalla2 = new Intent(RTipoDeCuenta.this,mainEstudiante.class);
                 startActivity(siguientePantalla2);
             }
         });

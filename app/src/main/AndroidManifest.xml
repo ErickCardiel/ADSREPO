@@ -56,7 +56,10 @@
             android:name=".MainConductor"
             android:exported="true"
             android:label="@string/title_activity_main_conductor" />
-        <activity android:name=".contrasena"></activity>
+        <activity android:name=".contrasena" />
+        <activity
+            android:name=".mainEstudiante"
+            android:label="@string/title_activity_main_estudiante"></activity>
     </application>
 
 </manifest>
