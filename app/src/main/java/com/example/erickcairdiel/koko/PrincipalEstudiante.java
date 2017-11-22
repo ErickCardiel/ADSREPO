@@ -8,6 +8,6 @@ public class PrincipalEstudiante extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal_estudiante);
+        setContentView(R.layout.activity_main_estudiante);
     }
 }

@@ -21,7 +21,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Codigo"
-        tools:targetApi="lollipop" />
+        tools:targetApi="lollipop"
+        android:layout_marginRight="48dp" />
 
     <EditText
         android:id="@+id/txt_Codigo"

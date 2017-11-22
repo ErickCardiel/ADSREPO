@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_ICorreo" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txt_IContrasena"
         android:layout_width="343dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -75,10 +75,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_IContrasena" />
 
     <EditText
-        android:id="@+id/txt_nombreI"
+        android:id="@+id/txt_INombre"
         android:layout_width="323dp"
         android:layout_height="39dp"
         android:layout_marginEnd="8dp"
@@ -109,7 +109,7 @@
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_nombreI"
+        app:layout_constraintTop_toBottomOf="@+id/txt_INombre"
         app:layout_constraintVertical_bias="0.114"
         tools:targetApi="lollipop" />
 

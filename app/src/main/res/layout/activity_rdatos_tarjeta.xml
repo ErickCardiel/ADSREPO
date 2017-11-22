@@ -178,7 +178,8 @@
         android:textColor="?attr/colorButtonNormal"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="347dp" />
+        tools:layout_editor_absoluteY="347dp"
+        android:layout_marginLeft="44dp" />
 
     <EditText
         android:id="@+id/txt_mes"
@@ -195,6 +196,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txt_anio"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="347dp" />
+        tools:layout_editor_absoluteY="347dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginLeft="8dp" />
 
 </android.support.constraint.ConstraintLayout>
