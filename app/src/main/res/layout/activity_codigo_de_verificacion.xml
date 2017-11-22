@@ -4,24 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gps"
     tools:context="com.example.erickcairdiel.koko.CodigoDeVerificacion">
 
     <Button
         android:id="@+id/btn_continuar"
-        android:layout_width="68dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="256dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#ffffff"
-        android:drawableLeft="@drawable/continuar"
-        android:drawableStart="@drawable/continuar"
-        android:text="@string/btn_Continuar"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_width="29dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@android:drawable/ic_media_play"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Codigo"
-        tools:targetApi="lollipop" />
+        tools:targetApi="lollipop"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@android:drawable/ic_media_play" />
 
     <EditText
         android:id="@+id/txt_Codigo"
@@ -30,8 +30,12 @@
         android:layout_marginBottom="336dp"
         android:layout_marginEnd="85dp"
         android:layout_marginStart="84dp"
+        android:backgroundTint="@android:color/white"
         android:ems="10"
         android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +54,11 @@
         android:text="@string/txt_IngresarL"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txt_Codigo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

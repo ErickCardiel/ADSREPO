@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gps"
     tools:context="com.example.erickcairdiel.koko.RMetodoDePago">
 
     <TextView
@@ -16,6 +17,7 @@
         android:text="@string/agrega_un_m_todo_de_pago_a_tu_cuenta"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,10 +48,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
-        android:backgroundTint="#ffffff"
-        android:drawableLeft="@drawable/tarjeta"
-        android:drawableStart="@drawable/tarjeta"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/ic_menu_agenda"
+        android:drawableStart="@android:drawable/ic_menu_agenda"
         android:text="@string/tarjeta_de_credito_debito"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,18 +62,19 @@
 
     <Button
         android:id="@+id/btn_continuar"
-        android:layout_width="68dp"
-        android:layout_height="wrap_content"
+        android:layout_width="29dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="40dp"
-        android:backgroundTint="#ffffff"
-        android:drawableLeft="@drawable/continuar"
-        android:drawableStart="@drawable/continuar"
-        android:text="@string/btn_Continuar"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="@android:color/transparent"
+        android:drawableStart="@android:drawable/ic_media_play"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:targetApi="lollipop"
-        android:layout_marginRight="40dp" />
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@android:drawable/ic_media_play" />
+
 
 </android.support.constraint.ConstraintLayout>

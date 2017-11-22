@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ADSREPO.iml" filepath="$PROJECT_DIR$/ADSREPO.iml" />
+      <module fileurl="file://C:\Users\Bianca Sanchez\StudioProjects\ADSREPO\ADSREPO.iml" filepath="C:\Users\Bianca Sanchez\StudioProjects\ADSREPO\ADSREPO.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Bianca Sanchez\StudioProjects\ADSREPO\app\app.iml" filepath="C:\Users\Bianca Sanchez\StudioProjects\ADSREPO\app\app.iml" />
     </modules>
   </component>
 </project>
