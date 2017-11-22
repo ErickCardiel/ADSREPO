@@ -137,4 +137,5 @@
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="title_activity_main_conductor">Map</string>
     <string name="title_activity_main_estudiante">Map</string>
+    <string name="selecciona_tarifa">Selecciona tarifa</string>
 </resources>

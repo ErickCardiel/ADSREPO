@@ -5,24 +5,27 @@
     android:id="@+id/contraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gps"
     android:textAlignment="center"
     tools:context="com.example.erickcairdiel.koko.ajustesDeTransporte">
 
     <TextView
         android:id="@+id/lblUniversidad"
-        android:layout_width="146dp"
-        android:layout_height="28dp"
+        android:layout_width="286dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         android:singleLine="false"
+        android:text="@string/universidad"
         android:textAlignment="center"
-        android:textSize="12sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.353"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/universidad" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lblAsientos"
@@ -30,15 +33,17 @@
         android:layout_height="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/asientosDisponibles"
         android:textAlignment="center"
-        android:textSize="12sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblUniversidad"
-        android:text="@string/asientosDisponibles" />
+        app:layout_constraintTop_toBottomOf="@+id/lblUniversidad" />
 
     <TextView
         android:id="@+id/lblPasaje"
@@ -47,13 +52,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
-        android:textSize="12sp"
+        android:text="@string/Pasaje"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblAsientos"
-        android:text="@string/Pasaje" />
+        app:layout_constraintTop_toBottomOf="@+id/lblAsientos" />
 
     <Switch
         android:id="@+id/switch1"
@@ -76,12 +83,12 @@
         android:layout_marginBottom="30dp"
         android:layout_marginEnd="123dp"
         android:layout_marginStart="123dp"
+        android:text="@string/registrarRuta"
         android:textColor="@android:color/white"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/registrarRuta" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <NumberPicker
         android:id="@+id/numeroAsientos"
@@ -109,8 +116,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
-        android:text="@string/tarifa"
-        android:textSize="12sp"
+        android:backgroundTint="@android:color/white"
+        android:text="@string/selecciona_tarifa"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
@@ -125,7 +136,8 @@
         android:layout_marginTop="28dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        android:layout_marginRight="48dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -137,6 +149,8 @@
         android:contentDescription="@string/Foto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="179dp"
+        android:layout_marginLeft="178dp" />
 
 </android.support.constraint.ConstraintLayout>

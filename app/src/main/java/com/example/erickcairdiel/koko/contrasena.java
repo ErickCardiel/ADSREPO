@@ -20,7 +20,7 @@ public class contrasena extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent continuar = new Intent(contrasena.this,PrincipalEstudiante.class);
+                Intent continuar = new Intent(contrasena.this,mainEstudiante.class);
                 startActivity(continuar);
 
             }
