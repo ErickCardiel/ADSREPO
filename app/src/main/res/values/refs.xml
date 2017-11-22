@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="masterc" />
+    <drawable name="estudiante" />
+    <drawable name="conductor" />
+    <drawable name="registrar" />
+    <drawable name="iniciar" />
+    <drawable name="americant" />
+    <drawable name="tarjeta" />
+    <drawable name="visat" />
+</resources>
