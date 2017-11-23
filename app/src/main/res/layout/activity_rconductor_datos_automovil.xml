@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gps"
+    android:background="@android:color/black"
     tools:context="com.example.erickcairdiel.koko.RConductorDatosAutomovil">
 
 
     <EditText
-        android:id="@+id/txt_marca"
+        android:id="@+id/Imarca"
         android:layout_width="214dp"
         android:layout_height="36dp"
         android:layout_marginEnd="16dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_marcaL" />
 
     <EditText
-        android:id="@+id/txt_modelo"
+        android:id="@+id/Imodelo"
         android:layout_width="214dp"
         android:layout_height="31dp"
         android:layout_marginEnd="16dp"
@@ -85,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_marca" />
+        app:layout_constraintTop_toBottomOf="@+id/Imarca" />
 
     <TextView
         android:id="@+id/txt_matriculaL"
@@ -101,10 +101,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_modelo" />
+        app:layout_constraintTop_toBottomOf="@+id/Imodelo" />
 
     <EditText
-        android:id="@+id/txt_matricula"
+        android:id="@+id/Imatricula"
         android:layout_width="214dp"
         android:layout_height="34dp"
         android:layout_marginEnd="16dp"
@@ -125,7 +125,7 @@
         android:layout_marginEnd="70dp"
         android:layout_marginTop="26dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_matricula"
+        app:layout_constraintTop_toBottomOf="@+id/Imatricula"
         app:srcCompat="@android:drawable/ic_menu_gallery"
         android:layout_marginRight="70dp"
         android:contentDescription="@string/todo" />
@@ -141,7 +141,7 @@
         android:contentDescription="@string/todo"
         app:layout_constraintEnd_toStartOf="@+id/img_auto"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_matricula"
+        app:layout_constraintTop_toBottomOf="@+id/Imatricula"
         app:srcCompat="@android:drawable/ic_menu_today"
         android:layout_marginRight="45dp"
         android:layout_marginLeft="59dp" />

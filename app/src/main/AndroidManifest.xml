@@ -36,7 +36,6 @@
         <activity android:name=".RDatosTarjeta" />
         <activity android:name=".RTipoDeCuenta" />
         <activity android:name=".RConductorDatosAutomovil" />
-        <activity android:name=".DatosDeRuta" />
 
         <!-- <activity android:name=".ajustesDeTransporte"></activity> -->
         <!--

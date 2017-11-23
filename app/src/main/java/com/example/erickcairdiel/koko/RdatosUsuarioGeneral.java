@@ -20,7 +20,7 @@ public class RdatosUsuarioGeneral extends AppCompatActivity
 
         txtContrasena = (TextView) findViewById(R.id.txt_IContrasena);
         txtCorreo = (TextView) findViewById(R.id.txt_ICorreo);
-        txtNombre = (TextView) findViewById(R.id.txt_INombre);
+        txtNombre = (TextView) findViewById(R.id.txt_Inombre);
         //txtEdad = (TextView) findViewById(R.id.txtEdad);
         usuario=(Usuario)getApplication();
         continuar = findViewById(R.id.btn_continuar);
