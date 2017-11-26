@@ -67,4 +67,14 @@
         android:layout_marginRight="107dp"
         android:layout_marginLeft="113dp" />
 
+    <Button
+        android:id="@+id/btnPrueba"
+        android:layout_width="41dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:text="!"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="620dp"
+        android:layout_marginLeft="20dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>

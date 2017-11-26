@@ -20,7 +20,7 @@ public class IngreseNumeroTelefonoMovil extends AppCompatActivity
         usuario = (Usuario)getApplication();
         setContentView(R.layout.activity_ingrese_numero_telefono_movil);
 
-        editText = (EditText)findViewById(R.id.txt_Numero);
+        editText = (EditText)findViewById(R.id.INumero);
         continuar = findViewById(R.id.btn_continuar);
         continuar.setOnClickListener(new View.OnClickListener()
         {

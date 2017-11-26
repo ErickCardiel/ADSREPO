@@ -10,6 +10,7 @@ public class IniciarSesionRegistro extends AppCompatActivity {
 
     Button iniciarSesion;
     Button registrarse;
+    Button prueba;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,7 +38,15 @@ public class IniciarSesionRegistro extends AppCompatActivity {
             }
         });
 
-
+        prueba = findViewById(R.id.btnPrueba);
+        prueba.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent prueba = new Intent(IniciarSesionRegistro.this,perfilEstudiante.class);
+                startActivity(prueba);
+            }
+        });
 
     }
 }

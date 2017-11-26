@@ -18,8 +18,8 @@ public class RdatosUsuarioGeneral extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rdatos_usuario_general);
 
-        txtContrasena = (TextView) findViewById(R.id.txt_IContrasena);
-        txtCorreo = (TextView) findViewById(R.id.txt_ICorreo);
+        txtContrasena = (TextView) findViewById(R.id.IContrasena);
+        txtCorreo = (TextView) findViewById(R.id.ICorreo);
         txtNombre = (TextView) findViewById(R.id.txt_Inombre);
         //txtEdad = (TextView) findViewById(R.id.txtEdad);
         usuario=(Usuario)getApplication();
