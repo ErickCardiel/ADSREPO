@@ -140,6 +140,7 @@
     <string name="selecciona_tarifa">Selecciona tarifa</string>
     <string name="nombre">Nombre: Erick Gerardo Cardiel</string>
     <string name="universidadL">Universidad: UABC</string>
-    <string name="correo">Correo: erick.gerardo.cardiel@uabc.edu.mx</string>
+    <string name="correo">Correo: erick@uabc.edu.mx</string>
     <string name="edad">Edad: 21</string>
+    <string name="marcaAuto">Automóvil: Ford Focus 2015</string>
 </resources>

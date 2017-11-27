@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.erickcairdiel.koko.perfilEstudiante">
+    tools:context="com.example.erickcairdiel.koko.perfilConductor">
 
     <!--
-   <include
+    <include
         android:id="@+id/include2"
-        layout="@layout/toolbar"
-        android:layout_height="36dp" />
+        layout="@layout/toolbar" />
     -->
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="164dp"
-        android:layout_height="139dp"
+        android:layout_width="151dp"
+        android:layout_height="116dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
@@ -24,7 +23,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ICalificacion"
-        app:srcCompat="@drawable/pasajero" />
+        app:srcCompat="@drawable/conductorinf" />
 
     <RatingBar
         android:id="@+id/ICalificacion"
@@ -59,8 +58,8 @@
         app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="24dp" />
 
     <TextView
         android:id="@+id/txt_universidad"
@@ -77,8 +76,8 @@
         app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nombre"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="24dp" />
 
     <TextView
         android:id="@+id/txt_correo"
@@ -95,8 +94,8 @@
         app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_universidad"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="24dp" />
 
     <TextView
         android:id="@+id/txt_edad"
@@ -115,5 +114,32 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_correo"
         android:layout_marginRight="24dp"
         android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/txt_Autmovil"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/marcaAuto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_edad"
+        android:layout_marginLeft="52dp" />
+
+    <ImageView
+        android:id="@+id/img_Auto"
+        android:layout_width="86dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="81dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Autmovil"
+        app:srcCompat="@drawable/auto" />
 
 </android.support.constraint.ConstraintLayout>

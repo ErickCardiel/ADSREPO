@@ -58,7 +58,11 @@
         <activity
             android:name=".mainEstudiante"
             android:label="@string/title_activity_main_estudiante" />
-        <activity android:name=".perfilEstudiante"></activity>
+        <activity android:name=".perfilEstudiante" />
+        <activity android:name=".perfilConductor" />
+        <activity android:name=".infoConductor" />
+        <activity android:name=".pasajeros" />
+        <activity android:name=".formasPago"></activity>
     </application>
 
 </manifest>
