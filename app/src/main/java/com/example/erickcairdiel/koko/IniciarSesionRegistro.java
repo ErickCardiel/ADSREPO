@@ -38,12 +38,12 @@ public class IniciarSesionRegistro extends AppCompatActivity {
             }
         });
 
-        prueba = findViewById(R.id.btnPrueba);
+        prueba = findViewById(R.id.btn_a1);
         prueba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
             {
-                Intent prueba = new Intent(IniciarSesionRegistro.this,perfilEstudiante.class);
+                Intent prueba = new Intent(IniciarSesionRegistro.this,botonesPrueba.class);
                 startActivity(prueba);
             }
         });

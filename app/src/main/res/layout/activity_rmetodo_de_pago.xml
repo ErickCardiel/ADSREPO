@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
     tools:context="com.example.erickcairdiel.koko.RMetodoDePago">
 
     <TextView
@@ -17,26 +16,26 @@
         android:text="@string/agrega_un_m_todo_de_pago_a_tu_cuenta"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="164dp"
 
         android:text="@string/al_continuar_sin_agregar_un_m_todo_de_pago_deber_s_realizar_los_pagos_del_transporte_en_efectivo"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="14sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTarjeta"
         tools:ignore="MissingConstraints" />
@@ -52,7 +51,8 @@
         android:drawableLeft="@android:drawable/ic_menu_agenda"
         android:drawableStart="@android:drawable/ic_menu_agenda"
         android:text="@string/tarjeta_de_credito_debito"
-        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,19 +62,16 @@
 
     <Button
         android:id="@+id/btn_continuar"
-        android:layout_width="29dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="40dp"
-        android:background="@android:color/transparent"
-        android:drawableStart="@android:drawable/ic_media_play"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/continuar"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:targetApi="lollipop"
-        android:layout_marginRight="40dp"
-        android:drawableLeft="@android:drawable/ic_media_play" />
+        android:layout_marginRight="36dp" />
 
 
 </android.support.constraint.ConstraintLayout>

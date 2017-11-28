@@ -4,131 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
     tools:context="com.example.erickcairdiel.koko.RConductorDatosAutomovil">
 
 
     <EditText
         android:id="@+id/Imarca"
-        android:layout_width="214dp"
-        android:layout_height="36dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@android:color/white"
+        android:layout_marginStart="24dp"
         android:ems="10"
         android:inputType="text"
-        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_marcaL" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_marcaL"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp" />
 
     <EditText
         android:id="@+id/Imodelo"
-        android:layout_width="214dp"
-        android:layout_height="31dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@android:color/white"
+        android:layout_marginStart="24dp"
         android:ems="10"
         android:inputType="text"
-        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_modeloL" />
-
-    <TextView
-        android:id="@+id/txt_datos"
-        android:layout_width="248dp"
-        android:layout_height="31dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/datos_del_autom_vil"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modeloL"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="24dp" />
 
     <TextView
         android:id="@+id/txt_marcaL"
-        android:layout_width="57dp"
-        android:layout_height="27dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="75dp"
         android:text="@string/marca"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="300dp"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="24dp" />
 
     <TextView
         android:id="@+id/txt_modeloL"
-        android:layout_width="67dp"
-        android:layout_height="27dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="@string/modelo"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Imarca" />
+        app:layout_constraintTop_toBottomOf="@+id/Imarca"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="24dp" />
 
     <TextView
         android:id="@+id/txt_matriculaL"
-        android:layout_width="86dp"
-        android:layout_height="35dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="@string/matricula"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Imodelo" />
+        app:layout_constraintTop_toBottomOf="@+id/Imodelo"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="24dp" />
 
     <EditText
         android:id="@+id/Imatricula"
-        android:layout_width="214dp"
-        android:layout_height="34dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@android:color/white"
+        android:layout_marginStart="24dp"
         android:ems="10"
         android:inputType="text"
-        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_matriculaL" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_matriculaL"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="24dp" />
 
     <ImageView
         android:id="@+id/img_auto"
-        android:layout_width="126dp"
-        android:layout_height="118dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginTop="26dp"
+        android:layout_width="139dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Imatricula"
         app:srcCompat="@android:drawable/ic_menu_gallery"
-        android:layout_marginRight="70dp"
-        android:contentDescription="@string/todo" />
+        android:layout_marginRight="64dp" />
 
     <ImageButton
         android:id="@+id/imbtn_cargar"
@@ -147,19 +136,30 @@
         android:layout_marginLeft="59dp" />
 
     <Button
-    android:id="@+id/btn_continuar"
-    android:layout_width="29dp"
-    android:layout_height="0dp"
-    android:layout_marginBottom="16dp"
-    android:layout_marginEnd="40dp"
-    android:background="@android:color/transparent"
-    android:drawableStart="@android:drawable/ic_media_play"
-    android:textAlignment="center"
-    android:textColor="@android:color/white"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    tools:targetApi="lollipop"
-    android:layout_marginRight="40dp"
-    android:drawableLeft="@android:drawable/ic_media_play" />
+        android:id="@+id/btn_continuar"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/continuar"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="lollipop"
+        android:layout_marginRight="40dp" />
+
+    <TextView
+        android:id="@+id/txt_ingreseAuto"
+        android:layout_width="219dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:text="Datos de Automóvil"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

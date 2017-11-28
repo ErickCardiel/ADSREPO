@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
     tools:context="com.example.erickcairdiel.koko.IniciarSesionRegistro">
 
     <Button
@@ -15,36 +14,34 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/ic_menu_add"
         android:drawableStart="@android:drawable/ic_menu_add"
         android:text="@string/btn_registrar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:targetApi="lollipop"
-        android:drawableLeft="@android:drawable/ic_menu_add" />
+        tools:targetApi="lollipop" />
 
     <Button
         android:id="@+id/btn_IniciarSesion"
-        android:layout_width="176dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:drawableStart="@android:drawable/ic_lock_idle_lock"
         android:text="@string/btn_iniciarSesion"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_Registrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,UnusedAttribute"
-        android:drawableLeft="@android:drawable/ic_lock_idle_lock" />
+        tools:ignore="MissingConstraints,UnusedAttribute" />
 
     <TextView
         android:id="@+id/txt_SeleccionOp"
@@ -57,8 +54,7 @@
         android:text="@string/txt_SeleccionaOpc"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_IniciarSesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,13 +64,15 @@
         android:layout_marginLeft="113dp" />
 
     <Button
-        android:id="@+id/btnPrueba"
-        android:layout_width="41dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="20dp"
-        android:text="!"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="620dp"
-        android:layout_marginLeft="20dp"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/btn_a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="!!!!!!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="3dp" />
+
+
 </android.support.constraint.ConstraintLayout>

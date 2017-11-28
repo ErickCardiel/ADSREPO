@@ -26,6 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:drawableLeft="@drawable/efectivo"
@@ -35,9 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Pasajeros"
-        android:layout_marginRight="32dp"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Pasajeros" />
 
     <CheckBox
         android:id="@+id/chk_Tarjeta1"
@@ -45,6 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:drawableLeft="@drawable/tarjeta"
@@ -54,9 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chk_Efectivo"
-        android:layout_marginRight="32dp"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/chk_Efectivo" />
 
     <CheckBox
         android:id="@+id/chk_Tarjeta2"
@@ -64,6 +64,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:drawableLeft="@drawable/tarjeta"
@@ -73,9 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chk_Tarjeta1"
-        android:layout_marginRight="32dp"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/chk_Tarjeta1" />
 
     <CheckBox
         android:id="@+id/chk_Tarjeta3"
@@ -83,6 +83,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:drawableLeft="@drawable/tarjeta"
@@ -92,9 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chk_Tarjeta2"
-        android:layout_marginRight="32dp"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/chk_Tarjeta2" />
 
     <TextView
         android:id="@+id/txt_agregar"
@@ -115,6 +115,8 @@
         android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
@@ -124,8 +126,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.249"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_agregar"
-        android:layout_marginRight="32dp"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_agregar" />
 
 </android.support.constraint.ConstraintLayout>

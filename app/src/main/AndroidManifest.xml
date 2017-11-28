@@ -62,7 +62,8 @@
         <activity android:name=".perfilConductor" />
         <activity android:name=".infoConductor" />
         <activity android:name=".pasajeros" />
-        <activity android:name=".formasPago"></activity>
+        <activity android:name=".formasPago" />
+        <activity android:name=".botonesPrueba"></activity>
     </application>
 
 </manifest>
