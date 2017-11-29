@@ -15,7 +15,7 @@
     <!--INCICIO SESION Y REGISTRO-->
     <string name="app_name">UBER UNIVERSIDAD</string>
     <string name="btn_Continuar"><![CDATA[>]]></string>
-    <string name="txt_IngresarL">Ingresa el código de 4 digitos enviado al +52–664-xxx-xx-xx</string>
+    <string name="txt_IngresarL">Ingresa el código de 4 digitos enviado al +52–</string>
     <string name="btn_iniciarSesion">Iniciar Sesion</string>
     <string name="btn_registrar">Registro</string>
     <string name="txt_SeleccionaOpc">Seleciona una opción</string>

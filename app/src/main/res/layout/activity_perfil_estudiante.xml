@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.erickcairdiel.koko.perfilEstudiante">
 
-    <!--
-   <include
-        android:id="@+id/include2"
-        layout="@layout/toolbar"
-        android:layout_height="36dp" />
-    -->
 
     <ImageView
         android:id="@+id/imageView3"

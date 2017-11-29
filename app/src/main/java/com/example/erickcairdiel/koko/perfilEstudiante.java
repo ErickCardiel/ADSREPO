@@ -9,15 +9,13 @@ import android.support.v7.widget.Toolbar;
 
 public class perfilEstudiante extends AppCompatActivity {
 
-    private Toolbar toolbar;
+
      RatingBar ratingBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil_estudiante);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         ratingBar = (RatingBar) findViewById(R.id.ICalificacion);
 

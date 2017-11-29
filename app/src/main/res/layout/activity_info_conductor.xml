@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.erickcairdiel.koko.infoConductor">
 
-    <!--
-    <include
-        android:id="@+id/include2"
-        layout="@layout/toolbar" />
-        -->
 
     <ImageView
         android:id="@+id/imageView3"

@@ -22,8 +22,8 @@ public class RImagenPerfilUsuario extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Intent continuar = new Intent(RImagenPerfilUsuario.this,RMetodoDePago.class);
-                startActivity(continuar);
+                Intent go = new Intent(RImagenPerfilUsuario.this,RMetodoDePago.class);
+                startActivity(go);
 
             }
         });

@@ -68,23 +68,3 @@ public class Usuario extends Application
 		return ((int)(Math.random()*999)+1);
 	}
 }
-
-
-
-
-
-	/*
-	public void registro(String nombre, String correo, String contrasena, int edad, int telefono,int idUsuario, boolean registroConductor)
-	{
-		this.idUsuario = idUsuario;
-		this.nombre = nombre;
-		this.correo = correo;
-		this.contrasena = contrasena;
-		this.edad = edad;
-		this.telefono = telefono;
-		this.registroConductor = registroConductor;		
-	}
-	*/
-	
-	
-	

@@ -9,15 +9,12 @@ import android.widget.Toast;
 
 public class infoConductor extends AppCompatActivity {
 
-    private Toolbar toolbar;
+
     RatingBar ratingBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_conductor);
-
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         ratingBar = (RatingBar) findViewById(R.id.ICalificacion);
 
