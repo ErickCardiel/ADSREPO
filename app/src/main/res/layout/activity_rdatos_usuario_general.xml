@@ -27,12 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="48dp"
         android:text="@string/correo_electronico"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -100,14 +100,14 @@
         android:id="@+id/btn_continuar"
         android:layout_width="47dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/continuar"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:targetApi="lollipop"
-        android:layout_marginRight="44dp" />
+        android:layout_marginRight="16dp" />
 
     <TextView
         android:id="@+id/txt_ingreseDatos"
@@ -115,11 +115,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="109dp"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="Ingresa tus datos"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginRight="109dp"
@@ -128,7 +129,7 @@
     <TextView
         android:id="@+id/txt_IEdad"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="31dp"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
@@ -142,7 +143,7 @@
 
     <EditText
         android:id="@+id/IEdad"
-        android:layout_width="0dp"
+        android:layout_width="63dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"

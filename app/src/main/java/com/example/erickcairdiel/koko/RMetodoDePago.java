@@ -8,8 +8,7 @@ import android.widget.Button;
 
 public class RMetodoDePago extends AppCompatActivity {
 
-    Button continuar;
-    Button tarjeta;
+    Button continuar,tarjeta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,8 @@ public class RMetodoDePago extends AppCompatActivity {
         continuar = findViewById(R.id.btn_continuar);
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent siguientePantalla2 = new Intent(RMetodoDePago.this,RTipoDeCuenta.class);
                 startActivity(siguientePantalla2);
             }

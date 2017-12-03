@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class RDatosTarjeta extends AppCompatActivity
@@ -13,7 +14,7 @@ public class RDatosTarjeta extends AppCompatActivity
 
     Button continuar;
     Usuario usuario;
-    String strNumTarjeta,getStrNumTarjeta,strCodigoSeguridad,strAnio,strMes;
+    String strNumTarjeta,strCodigoSeguridad,strAnio,strMes;
     TextView numTarjeta,codigoSeguridad,anio,mes;
 
 
@@ -39,14 +40,45 @@ public class RDatosTarjeta extends AppCompatActivity
                 strAnio = anio.getText().toString();
                 strMes = mes.getText().toString();
 
-                if(TextUtils.isEmpty(strNumTarjeta)==false&&TextUtils.isEmpty(strCodigoSeguridad)==false&&TextUtils.isEmpty(strAnio)==false
-                        &&TextUtils.isEmpty(strMes)==false)
+                if(!TextUtils.isEmpty(strNumTarjeta)&&!TextUtils.isEmpty(strCodigoSeguridad)&&!TextUtils.isEmpty(strAnio)&&!TextUtils.isEmpty(strMes))
                 {
-                    Intent continuar = new Intent(RDatosTarjeta.this,RTipoDeCuenta.class);
-                    startActivity(continuar);
-                    usuario.registrarTarjeta(strNumTarjeta,Integer.parseInt(strCodigoSeguridad),Integer.parseInt(strAnio),Integer.parseInt(strMes),"prueba");
+                    if(validaNumSeg(strCodigoSeguridad)&&validaNumTarjeta(strNumTarjeta)&&validaAnioyMes(Integer.parseInt(strAnio),Integer.parseInt(strMes)))
+                    {
+                        usuario.registrarTarjeta(strNumTarjeta,Integer.parseInt(strCodigoSeguridad),Integer.parseInt(strAnio),Integer.parseInt(strMes),"prueba");
+                        Intent continuar = new Intent(RDatosTarjeta.this,RTipoDeCuenta.class);
+                        startActivity(continuar);
+                    }
                 }
             }
         });
     }
+
+    boolean validaNumTarjeta(String dato)
+    {
+        int contador = 0;
+        for( int i=0; i<dato.length(); i++ )
+                contador++;
+
+        if(contador==16) return true;
+        else return false;
+    }
+
+
+    boolean validaNumSeg(String dato)
+    {
+        int contador = 0;
+        for( int i=0; i<dato.length(); i++ )
+                contador++;
+
+        if(contador==3) return true;
+        else return false;
+    }
+
+    boolean validaAnioyMes(int anio, int mes)
+    {
+       if(anio>2017&&anio<2040&&mes>0&&mes<13) return true;
+       else return false;
+    }
+
+
 }

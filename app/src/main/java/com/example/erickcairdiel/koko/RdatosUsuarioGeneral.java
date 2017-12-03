@@ -39,12 +39,43 @@ public class RdatosUsuarioGeneral extends AppCompatActivity
 
                 if((TextUtils.isEmpty(strNombre)==false)&&(TextUtils.isEmpty(strCorreo)==false)&&(TextUtils.isEmpty(strContrasena)==false)&&(TextUtils.isEmpty(strEdad)==false))
                 {
-                    usuario.registraDatosGenerales(strNombre, strCorreo, strContrasena, Integer.parseInt(strEdad),usuario.asignarId());
-                    Intent continuar = new Intent(RdatosUsuarioGeneral.this, RImagenPerfilUsuario.class);
-                    startActivity(continuar);
+                    if(validaEdad(Integer.parseInt(strEdad))&&validaCorreo(strCorreo)&&validaNombre(strNombre))
+                    {
+                        usuario.registraDatosGenerales(strNombre, strCorreo, strContrasena, Integer.parseInt(strEdad), usuario.asignarId());
+                        Intent continuar = new Intent(RdatosUsuarioGeneral.this, RImagenPerfilUsuario.class);
+                        startActivity(continuar);
+                    }
                 }
             }
         });
 
+    }
+
+    boolean validaEdad(int num)
+    {
+        if (num<120&&num>0) return true;
+            else return false;
+    }
+
+    boolean validaCorreo(String dato)
+    {
+        int contador = 0;
+        for( int i=0; i<dato.length(); i++ )
+            if( dato.charAt(i) == '@' )
+                contador++;
+
+        if(contador==1) return true;
+        else return false;
+    }
+
+    boolean validaNombre(String dato)
+    {
+        int contador = 0;
+        for( int i=0; i<dato.length(); i++ )
+            if( dato.charAt(i) == ' ' )
+                contador++;
+
+        if(contador>1) return true;
+        else return false;
     }
 }

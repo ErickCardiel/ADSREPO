@@ -2,32 +2,37 @@ package com.example.erickcairdiel.koko;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.widget.RatingBar;
-import android.widget.Toast;
+import android.widget.TextView;
 
 public class perfilConductor extends AppCompatActivity {
 
+    Usuario usuario;
+    TextView nombre,correo,edad,marca,modelo,anio;
 
-    RatingBar ratingBar;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil_conductor);
 
+        usuario = (Usuario)getApplication();
 
-        ratingBar = (RatingBar) findViewById(R.id.ICalificacion);
+        nombre = findViewById(R.id.cNombre);
+        nombre.setText(usuario.nombre);
 
-        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(perfilConductor.this,"Start: "+ v,Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return true;
+        correo = findViewById(R.id.cCorreo);
+        nombre.setText(usuario.correo);
+
+        edad = findViewById(R.id.cEdad);
+        edad.setText(String.valueOf(usuario.edad));
+
+        marca = findViewById(R.id.cMarca);
+        marca.setText(usuario.conductor.automovil.marca);
+
+        modelo = findViewById(R.id.cModelo);
+        modelo.setText(usuario.conductor.automovil.modelo);
+
+        anio = findViewById(R.id.cAnio);
+        anio.setText(String.valueOf(usuario.conductor.automovil.anio));
     }
 }

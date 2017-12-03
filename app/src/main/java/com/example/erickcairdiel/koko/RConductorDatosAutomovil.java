@@ -38,14 +38,25 @@ public class RConductorDatosAutomovil extends AppCompatActivity {
                 strMatricula = matricula.getText().toString();
                 strAsientos = asientos.getText().toString();
 
-                if((TextUtils.isEmpty(strMarca)==false)&&(TextUtils.isEmpty(strModelo)==false)&&(TextUtils.isEmpty(strAnio)==false)&&(TextUtils.isEmpty(strMatricula)==false)&&(TextUtils.isEmpty(strAsientos)==false))
+                if(!(TextUtils.isEmpty(strMarca))&&(!TextUtils.isEmpty(strModelo))&&(!TextUtils.isEmpty(strAnio))&&(!TextUtils.isEmpty(strMatricula))&&(!TextUtils.isEmpty(strAsientos)))
                 {
-                    usuario.registroConductor(strModelo,strMarca,usuario.asignarId(),Integer.parseInt(strAsientos),Integer.parseInt(strAnio));
-                    Intent continuar = new Intent(RConductorDatosAutomovil.this, MainConductor.class);
-                    startActivity(continuar);
+                    if(validaAnioYAsientos(Integer.parseInt(strAnio),Integer.parseInt(strAsientos)))
+                    {
+                        usuario.registroConductor(strModelo, strMarca, usuario.asignarId(), Integer.parseInt(strAsientos), Integer.parseInt(strAnio));
+                        Intent P4 = new Intent(RConductorDatosAutomovil.this,perfilConductor.class);
+                        startActivity(P4);
+                        //Intent continuar = new Intent(RConductorDatosAutomovil.this, MainConductor.class);
+                        //startActivity(continuar);
+                    }
                 }
             }
         });
 
+    }
+
+    boolean validaAnioYAsientos(int anio, int asientos)
+    {
+        if((anio>1990&&anio<2019)&&(asientos>0&&asientos<8))return true;
+        else return false;
     }
 }

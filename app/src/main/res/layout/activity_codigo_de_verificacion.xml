@@ -10,14 +10,14 @@
         android:id="@+id/btn_continuar"
         android:layout_width="47dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
         android:background="@drawable/continuar"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:targetApi="lollipop"
-        android:layout_marginRight="44dp" />
+        android:layout_marginRight="4dp" />
 
     <EditText
         android:id="@+id/ICodigo"
@@ -40,7 +40,7 @@
     <TextView
         android:id="@+id/txt_IngresaL"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
@@ -53,21 +53,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="start" />
 
     <TextView
         android:id="@+id/txtColocarNumero"
-        android:layout_width="129dp"
+        android:layout_width="186dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="99dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="72dp"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.687"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="180dp" />
 
 </android.support.constraint.ConstraintLayout>

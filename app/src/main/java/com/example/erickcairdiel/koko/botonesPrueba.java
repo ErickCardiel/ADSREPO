@@ -56,7 +56,7 @@ public class botonesPrueba extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent P4 = new Intent(botonesPrueba.this,perfilConductor.class);
+                Intent P4 = new Intent(botonesPrueba.this,perfilEstudiante.class);
                 startActivity(P4);
 
             }
@@ -67,7 +67,7 @@ public class botonesPrueba extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent P5 = new Intent(botonesPrueba.this,perfilEstudiante.class);
+                Intent P5 = new Intent(botonesPrueba.this,perfilConductor.class);
                 startActivity(P5);
 
             }

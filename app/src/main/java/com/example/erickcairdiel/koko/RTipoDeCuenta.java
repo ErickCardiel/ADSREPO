@@ -26,6 +26,7 @@ public class RTipoDeCuenta extends AppCompatActivity {
             {
                 Intent siguientePantalla = new Intent(RTipoDeCuenta.this,RConductorDatosAutomovil.class);
                 startActivity(siguientePantalla);
+
             }
         });
 
@@ -35,6 +36,7 @@ public class RTipoDeCuenta extends AppCompatActivity {
             {
                 Intent siguientePantalla2 = new Intent(RTipoDeCuenta.this,mainEstudiante.class);
                 startActivity(siguientePantalla2);
+
             }
         });
 
