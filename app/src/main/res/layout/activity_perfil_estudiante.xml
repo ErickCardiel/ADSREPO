@@ -108,7 +108,6 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_correo"
         android:layout_marginRight="24dp"
         android:layout_marginLeft="8dp" />
-
     <TextView
         android:id="@+id/cNombre"
         android:layout_width="262dp"
