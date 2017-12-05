@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.contrasena">
 
     <TextView
         android:id="@+id/txt_ingresa"
-        android:layout_width="wrap_content"
+        android:layout_width="335dp"
         android:layout_height="42dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -16,7 +18,7 @@
         android:text="@string/ingresa_la_contrase_a_de_tu_cuenta"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="22sp"
+        android:textSize="21sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

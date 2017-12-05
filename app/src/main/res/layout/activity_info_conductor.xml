@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.infoConductor">
 
 
@@ -13,12 +15,12 @@
         android:layout_height="116dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ICalificacion"
-        app:srcCompat="@drawable/conductorinf" />
+        app:srcCompat="@drawable/conductor2" />
 
     <RatingBar
         android:id="@+id/ICalificacion"
@@ -125,15 +127,17 @@
 
     <TextView
         android:id="@+id/txt_Asientos"
-        android:layout_width="wrap_content"
+        android:layout_width="226dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="46dp"
         android:text="Asientos Disponibles: 2"
+        android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Autmovil"
-        android:layout_marginLeft="48dp" />
+        android:layout_marginLeft="46dp"
+        android:gravity="start" />
 
     <TextView
         android:id="@+id/txt_Tarifa"
@@ -169,16 +173,15 @@
         android:id="@+id/button2"
         android:layout_width="163dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginStart="204dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="220dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@android:drawable/ic_menu_compass"
         android:text="   ¡Cancelar Raite!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginRight="44dp"
-        android:layout_marginLeft="204dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

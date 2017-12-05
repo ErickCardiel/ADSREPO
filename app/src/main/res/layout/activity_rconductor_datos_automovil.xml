@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.RConductorDatosAutomovil">
 
 
@@ -44,16 +46,17 @@
     <TextView
         android:id="@+id/txt_marcaL"
         android:layout_width="0dp"
-        android:layout_height="34dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="84dp"
         android:text="@string/marca"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ingreseAuto"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="24dp" />
 
@@ -92,41 +95,44 @@
 
     <EditText
         android:id="@+id/Imatricula"
-        android:layout_width="231dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="24dp"
         android:ems="10"
         android:inputType="text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_matriculaL"
+        android:layout_marginRight="16dp"
         android:layout_marginLeft="24dp" />
 
     <ImageView
         android:id="@+id/img_auto"
-        android:layout_width="80dp"
-        android:layout_height="85dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="288dp"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="276dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_gallery"
-        android:layout_marginRight="288dp" />
+        app:srcCompat="@drawable/auto" />
 
     <Button
         android:id="@+id/btn_continuar"
         android:layout_width="47dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/continuar"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:targetApi="lollipop"
-        android:layout_marginRight="16dp" />
+        android:layout_marginRight="40dp" />
 
     <TextView
         android:id="@+id/txt_ingreseAuto"
@@ -134,65 +140,86 @@
         android:layout_height="34dp"
         android:layout_marginEnd="96dp"
         android:layout_marginStart="96dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="40dp"
         android:text="Datos de Automóvil"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/IAnio"
-        android:layout_width="92dp"
+        android:layout_width="146dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
         android:ems="10"
         android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_anio"
-        android:layout_marginLeft="24dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/IAsientos"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txt_anio"
-        android:layout_width="74dp"
+        android:layout_width="163dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="Año"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Imatricula"
-        android:layout_marginLeft="32dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Imatricula" />
 
     <EditText
         android:id="@+id/IAsientos"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="40dp"
         android:ems="10"
         android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/IAnio"
-        app:layout_constraintTop_toBottomOf="@+id/txt_asientos"
-        android:layout_marginLeft="24dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="40dp" />
 
     <TextView
         android:id="@+id/txt_asientos"
-        android:layout_width="116dp"
+        android:layout_width="149dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
         android:text="Asientos"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txt_anio"
         app:layout_constraintTop_toBottomOf="@+id/Imatricula"
-        android:layout_marginLeft="28dp" />
+        android:layout_marginRight="44dp"
+        android:layout_marginLeft="16dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="119dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/cargar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_continuar"
+        app:layout_constraintStart_toEndOf="@+id/img_auto"
+        app:srcCompat="@android:drawable/ic_menu_upload_you_tube" />
 
 </android.support.constraint.ConstraintLayout>

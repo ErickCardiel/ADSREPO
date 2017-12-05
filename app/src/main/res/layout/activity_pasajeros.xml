@@ -5,6 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.pasajeros">
 
 
@@ -14,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="68dp"
         android:drawableLeft="@drawable/pasajeros"
         android:text=" Pasajeros"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -29,11 +31,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="44dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/pasajero"
         android:text="Nombre: Estudiante Universitario"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Pasajeros" />
 

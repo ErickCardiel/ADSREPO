@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.IniciarSesionRegistro">
 
     <Button
         android:id="@+id/btn_Registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="268dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
@@ -18,10 +20,9 @@
         android:drawableStart="@android:drawable/ic_menu_add"
         android:text="@string/btn_registrar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="22sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         tools:targetApi="lollipop" />
 
@@ -29,17 +30,18 @@
         android:id="@+id/btn_IniciarSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:drawableStart="@android:drawable/ic_lock_idle_lock"
-        android:text="@string/btn_iniciarSesion"
+        android:text="Iniciar Sesión"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="22sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_Registrar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,UnusedAttribute" />
 
@@ -54,23 +56,25 @@
         android:text="@string/txt_SeleccionaOpc"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="22sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_IniciarSesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginRight="107dp"
+        android:layout_marginLeft="113dp" />
 
     <Button
         android:id="@+id/btn_a1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="3dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="40dp"
         android:text="!!!!!!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="3dp" />
+        android:layout_marginRight="40dp" />
 
 
 </android.support.constraint.ConstraintLayout>

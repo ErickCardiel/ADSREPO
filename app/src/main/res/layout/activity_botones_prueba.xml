@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.botonesPrueba">
 
     <Button
@@ -25,9 +27,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="162dp"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="16dp"
         android:text="Info Conductor"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_a1"
         android:layout_marginRight="162dp"
@@ -39,9 +42,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="162dp"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="20dp"
         android:text="Pasajeros"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_a2"
         android:layout_marginRight="162dp"
@@ -64,11 +68,42 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="162dp"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="20dp"
         android:text="Perfil Conductor"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_a4"
+        android:layout_marginRight="162dp"
+        android:layout_marginLeft="161dp" />
+
+    <Button
+        android:id="@+id/btn_a6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="162dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="18dp"
+        android:text="menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a5"
+        android:layout_marginRight="162dp"
+        android:layout_marginLeft="161dp" />
+
+    <Button
+        android:id="@+id/btn_a7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="162dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="40dp"
+        android:text="menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a6"
         android:layout_marginRight="162dp"
         android:layout_marginLeft="161dp" />
 </android.support.constraint.ConstraintLayout>

@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.RMetodoDePago">
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="337dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -27,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="164dp"
 
         android:text="@string/al_continuar_sin_agregar_un_m_todo_de_pago_deber_s_realizar_los_pagos_del_transporte_en_efectivo"
         android:textAlignment="center"
@@ -64,14 +66,14 @@
         android:id="@+id/btn_continuar"
         android:layout_width="47dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="36dp"
         android:background="@drawable/continuar"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:targetApi="lollipop"
-        android:layout_marginRight="16dp" />
+        android:layout_marginRight="36dp" />
 
 
 </android.support.constraint.ConstraintLayout>

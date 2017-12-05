@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.RImagenPerfilUsuario">
 
     <Button
         android:id="@+id/btn_continuar"
         android:layout_width="47dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
         android:background="@drawable/continuar"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:targetApi="lollipop"
-        android:layout_marginRight="16dp" />
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textView3"
@@ -25,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         android:text="@string/selecciona_una_imagen_de_perfil"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -46,22 +48,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
+        app:srcCompat="@drawable/pasajero" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="106dp"
-        android:layout_height="32dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/cargar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@android:drawable/ic_menu_today" />
+        app:srcCompat="@drawable/bsubir" />
 
 
 </android.support.constraint.ConstraintLayout>

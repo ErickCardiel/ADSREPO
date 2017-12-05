@@ -5,23 +5,25 @@
     android:id="@+id/contraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     android:textAlignment="center"
     tools:context="com.example.erickcairdiel.koko.ajustesDeTransporte">
 
     <TextView
         android:id="@+id/lblUniversidad"
-        android:layout_width="254dp"
+        android:layout_width="286dp"
         android:layout_height="55dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="120dp"
         android:singleLine="false"
-        android:text="@string/universidad"
+        android:text="Selecciona la universidad a la cual conducirás"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,14 +33,14 @@
         android:layout_height="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="52dp"
         android:text="@string/asientosDisponibles"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblUniversidad" />
 
@@ -48,13 +50,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
-        android:text="@string/Pasaje"
+        android:layout_marginTop="60dp"
+        android:text="¿Deseas cobrar pasaje?"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblAsientos" />
 
@@ -66,7 +68,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toEndOf="@+id/lblPasaje"
         app:layout_constraintTop_toBottomOf="@+id/InumeroAsientos" />
 
@@ -76,13 +78,14 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="48dp"
         android:layout_marginEnd="123dp"
         android:layout_marginStart="123dp"
         android:text="@string/registrarRuta"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent" />
 
     <NumberPicker
@@ -91,9 +94,9 @@
         android:layout_height="94dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="196dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintStart_toEndOf="@+id/lblAsientos"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -115,34 +118,34 @@
         android:text="@string/selecciona_tarifa"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblPasaje" />
 
     <NumberPicker
         android:id="@+id/InumeroTarifa"
-        android:layout_width="41dp"
+        android:layout_width="43dp"
         android:layout_height="94dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="40dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="69dp"
-        android:layout_height="65dp"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
         android:layout_marginEnd="179dp"
         android:layout_marginStart="178dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/conductor2"
         android:contentDescription="@string/Foto"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

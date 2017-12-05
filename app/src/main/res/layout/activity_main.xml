@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
+    android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.MainActivity">
 
     <Button
         android:id="@+id/btnCancelar"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="32dp"
@@ -21,9 +23,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btnActivar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424"
-        android:layout_marginRight="32dp"
-        android:layout_marginLeft="80dp" />
+        app:layout_constraintVertical_bias="0.424" />
 
     <Button
         android:id="@+id/btnActivar"
@@ -43,12 +43,12 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="327dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="108dp"
-        android:text="Permitir a la aplicacion acceder a GPS"
+        android:text="Permitir a la aplicación acceder a GPS"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
