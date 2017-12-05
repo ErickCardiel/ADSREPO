@@ -8,6 +8,8 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".Usuario"
@@ -57,13 +59,15 @@
         <activity android:name=".contrasena" />
         <activity
             android:name=".mainEstudiante"
+            android:exported="true"
             android:label="@string/title_activity_main_estudiante" />
         <activity android:name=".perfilEstudiante" />
         <activity android:name=".perfilConductor" />
         <activity android:name=".infoConductor" />
         <activity android:name=".pasajeros" />
         <activity android:name=".formasPago" />
-        <activity android:name=".botonesPrueba"></activity>
+        <activity android:name=".botonesPrueba" />
+        <activity android:name=".registrarRuta"></activity>
     </application>
 
 </manifest>

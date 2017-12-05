@@ -11,6 +11,14 @@
     <string name="OFF">OFF</string>
     <string name="Foto">Foto</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="AT">AT</string>
+    <string name="InsertarUbicacion">  Insertar Ubicación</string>
+    <string name="Buscar">Buscar</string>
+    <string name="Abierto">Abierto</string>
+    <string name="Cerrado">Cerrado</string>
+    <string name="Modificar">Modificar</string>
+    <string name="Guardar">Guardar</string>
+    <string name="MiPerfil">Mi perfil</string>
 
     <!--INCICIO SESION Y REGISTRO-->
     <string name="app_name">UBER UNIVERSIDAD</string>
@@ -135,8 +143,8 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
-    <string name="title_activity_main_conductor">Map</string>
-    <string name="title_activity_main_estudiante">Map</string>
+    <string name="title_activity_main_conductor">Uber Universidad</string>
+    <string name="title_activity_main_estudiante">Uber Universidad</string>
     <string name="selecciona_tarifa">Selecciona tarifa</string>
     <string name="nombre">Nombre: Erick Gerardo Cardiel</string>
     <string name="universidadL">Universidad: UABC</string>

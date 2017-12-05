@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--NAVIGATION MENU PARA MAIN ESTUDIANTE!-->
+    <item android:id="@+id/nav_perfilEst"
+        android:title="Mi Perfil"
+        android:icon = "@drawable/pasajero"></item>
+    <item android:id="@+id/nav_metodoPago"
+        android:title="Metodo de pago"
+        android:icon = "@drawable/tarjeta"></item>
+</menu>
