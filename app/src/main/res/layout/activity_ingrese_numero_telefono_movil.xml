@@ -8,6 +8,7 @@
     android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.IngreseNumeroTelefonoMovil">
 
+
     <Button
         android:id="@+id/btn_continuar"
         android:layout_width="62dp"

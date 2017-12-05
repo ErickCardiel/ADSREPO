@@ -61,6 +61,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chk_Efectivo" />
 
+
     <CheckBox
         android:id="@+id/chk_Tarjeta3"
         style="@style/Widget.AppCompat.CompoundButton.CheckBox"

@@ -8,6 +8,7 @@
     android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.botonesPrueba">
 
+
     <Button
         android:id="@+id/btn_a1"
         android:layout_width="wrap_content"

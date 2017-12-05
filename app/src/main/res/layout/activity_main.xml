@@ -8,6 +8,7 @@
     android:focusable="auto"
     tools:context="com.example.erickcairdiel.koko.MainActivity">
 
+
     <Button
         android:id="@+id/btnCancelar"
         android:layout_width="120dp"

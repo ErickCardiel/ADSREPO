@@ -10,6 +10,7 @@
     android:textAlignment="center"
     tools:context="com.example.erickcairdiel.koko.ajustesDeTransporte">
 
+
     <TextView
         android:id="@+id/lblUniversidad"
         android:layout_width="286dp"

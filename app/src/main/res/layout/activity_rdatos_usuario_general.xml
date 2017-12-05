@@ -143,6 +143,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Inombre" />
 
+
     <EditText
         android:id="@+id/IEdad"
         android:layout_width="155dp"
