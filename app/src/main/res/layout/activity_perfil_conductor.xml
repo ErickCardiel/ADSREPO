@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ICalificacion"
-        app:srcCompat="@drawable/conductor2" />
+        app:srcCompat="@drawable/conductorinf" />
 
     <RatingBar
         android:id="@+id/ICalificacion"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:numStars="5"
         android:rating="2"
         android:scrollIndicators="start"
@@ -41,33 +41,32 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/cNombre"
+        android:id="@+id/txt_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="@string/nombre"
-        android:textAlignment="viewStart"
+        android:text="Nombre:"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="start" />
+        android:layout_marginLeft="8dp" />
 
     <TextView
-        android:id="@+id/cUniversidad"
+        android:id="@+id/txt_universidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="3dp"
-        android:text="@string/universidadL"
-        android:textAlignment="viewStart"
+        android:text="Universidad: UABC"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,115 +74,131 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nombre"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="24dp"
-        android:gravity="start" />
+        android:layout_marginRight="24dp" />
 
     <TextView
-        android:id="@+id/cCorreo"
+        android:id="@+id/txt_correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
-        android:text="@string/correo"
-        android:textAlignment="viewStart"
+        android:text="Correo:"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintHorizontal_bias="0.132"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_universidad"
         android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="start" />
+        android:layout_marginLeft="8dp" />
 
     <TextView
-        android:id="@+id/cEdad"
+        android:id="@+id/txt_edad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
-        android:text="@string/edad"
-        android:textAlignment="viewStart"
+        android:text="Edad:"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_correo"
         android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="start" />
+        android:layout_marginLeft="8dp" />
 
     <TextView
-    android:id="@+id/cMarca"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginEnd="24dp"
-    android:layout_marginStart="8dp"
-    android:text="@string/marcaAuto"
-    android:textAlignment="viewStart"
-    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-    android:textSize="18sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.305"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txt_edad"
-    android:layout_marginRight="24dp"
-    android:layout_marginLeft="8dp"
-    android:gravity="start" />
-
-    <TextView
-        android:id="@+id/cModelo"
-        android:layout_width="wrap_content"
+        android:id="@+id/txt_Autmovil"
+        android:layout_width="91dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/marcaAuto"
-        android:textAlignment="viewStart"
+        android:layout_marginStart="40dp"
+        android:text="Automovil:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.305"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_edad"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="start" />
-
-    <TextView
-        android:id="@+id/cAnio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="8dp"
-        android:gravity="start"
-        android:text="@string/marcaAuto"
-        android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.409"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_edad" />
+        android:layout_marginLeft="40dp" />
 
     <ImageView
         android:id="@+id/img_Auto"
         android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:layout_marginBottom="100dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="81dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Autmovil"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/auto" />
 
+    <TextView
+        android:id="@+id/cMarca"
+        android:layout_width="70dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="132dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_Autmovil" />
+
+    <TextView
+        android:id="@+id/cModelo"
+        android:layout_width="94dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="136dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cMarca" />
+
+    <TextView
+        android:id="@+id/cAnio"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="132dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cModelo" />
+
+    <TextView
+        android:id="@+id/cNombre"
+        android:layout_width="192dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="236dp"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_nombre"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/cCorreo"
+        android:layout_width="217dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="180dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_correo"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/cEdad"
+        android:layout_width="84dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="156dp"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_edad"
+        android:layout_marginLeft="24dp" />
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"

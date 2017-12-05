@@ -38,7 +38,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Pasajeros" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Pasajeros"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="8dp" />
 
     <CheckBox
         android:id="@+id/chk_Tarjeta1"
@@ -74,7 +76,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chk_Tarjeta1" />
+        app:layout_constraintTop_toBottomOf="@+id/chk_Tarjeta1"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="8dp" />
 
     <TextView
         android:id="@+id/txt_agregar"

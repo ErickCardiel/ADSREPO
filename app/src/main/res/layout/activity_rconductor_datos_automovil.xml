@@ -176,7 +176,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Imatricula" />
+        app:layout_constraintTop_toBottomOf="@+id/Imatricula"
+        android:layout_marginLeft="24dp" />
 
     <EditText
         android:id="@+id/IAsientos"
@@ -220,6 +221,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_continuar"
         app:layout_constraintStart_toEndOf="@+id/img_auto"
-        app:srcCompat="@android:drawable/ic_menu_upload_you_tube" />
+        app:srcCompat="@android:drawable/ic_menu_upload_you_tube"
+        android:layout_marginRight="119dp" />
 
 </android.support.constraint.ConstraintLayout>
