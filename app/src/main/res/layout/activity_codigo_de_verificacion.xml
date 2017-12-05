@@ -47,7 +47,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="44dp"
         android:gravity="start"
-        android:text="Ingresa el código de 4 digítos enviado al +52-664-XXX-XX-XX"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="22sp"

@@ -9,7 +9,6 @@
     tools:context="com.example.erickcairdiel.koko.perfilConductor">
 
 
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="151dp"
@@ -21,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ICalificacion"
-        app:srcCompat="@drawable/conductorinf" />
+        app:srcCompat="@drawable/conductor2" />
 
     <RatingBar
         android:id="@+id/ICalificacion"
@@ -41,176 +40,108 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/txt_nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="Nombre:"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp" />
-
-    <TextView
-        android:id="@+id/txt_universidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
-        android:text="Universidad: UABC"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.204"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_nombre"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="24dp" />
-
-    <TextView
-        android:id="@+id/txt_correo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="8dp"
-        android:text="Correo:"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.132"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_universidad"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp" />
-
-    <TextView
-        android:id="@+id/txt_edad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="8dp"
-        android:text="Edad:"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_correo"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="8dp" />
-
-    <TextView
-        android:id="@+id/txt_Autmovil"
-        android:layout_width="91dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="Automovil:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_edad"
-        android:layout_marginLeft="40dp" />
-
     <ImageView
         android:id="@+id/img_Auto"
         android:layout_width="86dp"
         android:layout_height="87dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginBottom="96dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Autmovil"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/auto" />
 
     <TextView
         android:id="@+id/cMarca"
-        android:layout_width="70dp"
+        android:layout_width="0dp"
         android:layout_height="22dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginStart="80dp"
         android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_Autmovil" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cEdad" />
 
     <TextView
         android:id="@+id/cModelo"
-        android:layout_width="94dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="136dp"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="80dp"
         android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cMarca" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cMarca" />
 
     <TextView
         android:id="@+id/cAnio"
-        android:layout_width="100dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="132dp"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="80dp"
         android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cModelo" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cModelo" />
 
     <TextView
         android:id="@+id/cNombre"
-        android:layout_width="192dp"
+        android:layout_width="0dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="236dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="45dp"
+        android:textAlignment="viewStart"
         android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_nombre"
-        tools:ignore="MissingConstraints"
-        android:layout_marginLeft="12dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/cCorreo"
-        android:layout_width="217dp"
+        android:layout_width="0dp"
         android:layout_height="19dp"
-        android:layout_marginBottom="180dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="80dp"
+        android:textAlignment="viewStart"
         android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_correo"
-        tools:ignore="MissingConstraints"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_universidad"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/cEdad"
-        android:layout_width="84dp"
+        android:layout_width="0dp"
         android:layout_height="23dp"
-        android:layout_marginBottom="156dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="80dp"
         android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_edad"
-        android:layout_marginLeft="24dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cCorreo" />
+
+    <TextView
+        android:id="@+id/txt_universidad"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="80dp"
+        android:text="Universidad: UABC"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cNombre" />
+
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_cambio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="24dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/estudiante"
         android:text="Cambiar de cuenta"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="28dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
