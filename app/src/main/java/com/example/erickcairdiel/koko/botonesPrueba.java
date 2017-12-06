@@ -13,6 +13,8 @@ public class botonesPrueba extends AppCompatActivity {
     Button P3;
     Button P4;
     Button P5;
+    Button P6;
+    Button P7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +58,7 @@ public class botonesPrueba extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent P4 = new Intent(botonesPrueba.this,perfilEstudiante.class);
+                Intent P4 = new Intent(botonesPrueba.this,perfilConductor.class);
                 startActivity(P4);
 
             }
@@ -67,8 +69,30 @@ public class botonesPrueba extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent P5 = new Intent(botonesPrueba.this,perfilConductor.class);
+                Intent P5 = new Intent(botonesPrueba.this,perfilEstudiante.class);
                 startActivity(P5);
+
+            }
+        });
+
+        P6 = findViewById(R.id.btn_a6);
+        P6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent P6 = new Intent(botonesPrueba.this,MainConductor.class);
+                startActivity(P6);
+
+            }
+        });
+
+        P7 = findViewById(R.id.btn_a7);
+        P7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent P7 = new Intent(botonesPrueba.this,mainEstudiante.class);
+                startActivity(P7);
 
             }
         });
