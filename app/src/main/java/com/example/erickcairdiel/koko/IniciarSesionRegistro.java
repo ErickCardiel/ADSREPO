@@ -35,7 +35,7 @@ public class IniciarSesionRegistro extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent iniciarSesion = new Intent(IniciarSesionRegistro.this,IngreseNumeroTelefonoMovil.class);
+                Intent iniciarSesion = new Intent(IniciarSesionRegistro.this,ingreseNumeroTelefonoMovilInisiarSesion.class);
                 startActivity(iniciarSesion);
             }
         });

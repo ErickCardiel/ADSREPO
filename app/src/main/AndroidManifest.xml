@@ -99,7 +99,8 @@
             android:exported="true" />
         <activity android:name=".registrarRuta" />
         <activity android:name=".modRuta" />
-        <activity android:name=".raiteEnProgreso"></activity>
+        <activity android:name=".raiteEnProgreso" />
+        <activity android:name=".ingreseNumeroTelefonoMovilInisiarSesion"></activity>
     </application>
 
 </manifest>

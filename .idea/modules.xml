@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ADSREPO.iml" filepath="$PROJECT_DIR$/ADSREPO.iml" />
+      <module fileurl="file://C:\Users\Erick Cairdiel\AndroidStudioProjects\lul\ADSREPO.iml" filepath="C:\Users\Erick Cairdiel\AndroidStudioProjects\lul\ADSREPO.iml" />
       <module fileurl="file://C:\Users\Erick Cairdiel\AndroidStudioProjects\final\ADSREPO.iml" filepath="C:\Users\Erick Cairdiel\AndroidStudioProjects\final\ADSREPO.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Erick Cairdiel\AndroidStudioProjects\lul\app\app.iml" filepath="C:\Users\Erick Cairdiel\AndroidStudioProjects\lul\app\app.iml" />
       <module fileurl="file://C:\AndroidStudioProjects\ADSREPO\final.iml" filepath="C:\AndroidStudioProjects\ADSREPO\final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lul.iml" filepath="$PROJECT_DIR$/lul.iml" />
     </modules>
   </component>
 </project>
