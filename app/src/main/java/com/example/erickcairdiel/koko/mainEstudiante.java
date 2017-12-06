@@ -54,6 +54,8 @@ public class mainEstudiante extends AppCompatActivity implements OnMapReadyCallb
             @Override
             public void onClick(View view)
             {
+                Intent Activity = new Intent(mainEstudiante.this, infoConductor.class);
+                startActivity(Activity);
                 Toast.makeText(mainEstudiante.this,"Solicitud enviada!",Toast.LENGTH_LONG).show();
             }
         });

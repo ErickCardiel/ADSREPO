@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
     //GPS
     private void showGPSDisabledAlertToUser() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("       *** Solicitud de transporte *** \n\n                      ★ ★ ★ ★ ★ \n\nNombre: Alexis Gutierrez Kinto\nUniversidad: UABC\nCorreo: alexis@uabc.edu.mx\nEdad: 21 años")
+        alertDialogBuilder.setMessage("Permitir a la aplicacion acceder a GPS")
                 .setCancelable(false)
                 .setPositiveButton("Aceptar",
                         new DialogInterface.OnClickListener() {

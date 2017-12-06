@@ -33,7 +33,7 @@ public class CodigoDeVerificacion extends AppCompatActivity
         continuar = findViewById(R.id.btn_continuar);
 
         numero = (TextView)findViewById(R.id.txtColocarNumero);
-        numero.setText("Ingresa el código de 4 digitos enviado al +52–"+usuario.telefono);
+        numero.setText(usuario.telefono);
 
         codigoVerificacion = (EditText)findViewById(R.id.ICodigo);
 

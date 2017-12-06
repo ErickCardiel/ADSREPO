@@ -14,7 +14,7 @@ public class IngreseNumeroTelefonoMovil extends AppCompatActivity
     Usuario usuario;
     EditText editText;
     Button continuar;
-    EditText editText2;
+   //EditText editText2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -39,7 +39,7 @@ public class IngreseNumeroTelefonoMovil extends AppCompatActivity
             }
         });
 
-
+/*
         editText2 = (EditText)findViewById(R.id.INumero);
         continuar = findViewById(R.id.btn_continuar);
         continuar.setOnClickListener(new View.OnClickListener()
@@ -55,6 +55,7 @@ public class IngreseNumeroTelefonoMovil extends AppCompatActivity
                 }
             }
         });
+        */
 
     }
 }
