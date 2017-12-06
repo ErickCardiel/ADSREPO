@@ -40,7 +40,7 @@ public class perfilConductor extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem){
                 int id = menuItem.getItemId();
                 if(id == R.id.nav_mapa){
-                    Intent Activity = new Intent(perfilConductor.this, MainConductor.class);
+                    Intent Activity = new Intent(perfilConductor.this, perfilEstudiante.class);
                     startActivity(Activity);
 
                 }

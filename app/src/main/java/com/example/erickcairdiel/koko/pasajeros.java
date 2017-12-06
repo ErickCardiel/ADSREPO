@@ -55,7 +55,7 @@ public class pasajeros extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent P1 = new Intent(pasajeros.this,perfilEstudiante.class);
+                Intent P1 = new Intent(pasajeros.this,infoEstudiante2.class);
                 startActivity(P1);
 
             }
@@ -66,7 +66,7 @@ public class pasajeros extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent P2 = new Intent(pasajeros.this,perfilEstudiante.class);
+                Intent P2 = new Intent(pasajeros.this,infoEstudiante2.class);
                 startActivity(P2);
 
             }
@@ -77,7 +77,7 @@ public class pasajeros extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent P3 = new Intent(pasajeros.this,perfilEstudiante.class);
+                Intent P3 = new Intent(pasajeros.this,infoEstudiante2.class);
                 startActivity(P3);
 
             }
@@ -88,7 +88,7 @@ public class pasajeros extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent P4 = new Intent(pasajeros.this,perfilEstudiante.class);
+                Intent P4 = new Intent(pasajeros.this,infoEstudiante2.class);
                 startActivity(P4);
 
             }

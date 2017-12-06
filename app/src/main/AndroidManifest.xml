@@ -100,7 +100,9 @@
         <activity android:name=".registrarRuta" />
         <activity android:name=".modRuta" />
         <activity android:name=".raiteEnProgreso" />
-        <activity android:name=".ingreseNumeroTelefonoMovilInisiarSesion"></activity>
+        <activity android:name=".ingreseNumeroTelefonoMovilInisiarSesion" />
+        <activity android:name=".infoEstudiante2" />
+        <activity android:name=".datosAuto2"></activity>
     </application>
 
 </manifest>

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
-public class perfilEstudiante extends AppCompatActivity {
+public class infoEstudiante2 extends AppCompatActivity {
     TextView nombre,correo,edad;
     Usuario usuario;
     RatingBar ratingBar;
@@ -26,7 +26,7 @@ public class perfilEstudiante extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfil_estudiante);
+        setContentView(R.layout.activity_info_estudiante2);
 
         //ACTIONBAR MENU
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayoutEst);
@@ -42,11 +42,11 @@ public class perfilEstudiante extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem){
                 int id = menuItem.getItemId();
                 if(id == R.id.nav_mapa){
-                    Intent Activity = new Intent(perfilEstudiante.this, mainEstudiante.class);
+                    Intent Activity = new Intent(infoEstudiante2.this, perfilEstudiante.class);
                     startActivity(Activity);
 
                 }else if(id == R.id.nav_metodoPago){
-                    Intent Activity = new Intent(perfilEstudiante.this, formasPago.class);
+                    Intent Activity = new Intent(infoEstudiante2.this, formasPago.class);
                     startActivity(Activity);
                 }
 
@@ -69,7 +69,7 @@ public class perfilEstudiante extends AppCompatActivity {
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(perfilEstudiante.this,"Start: "+ v,Toast.LENGTH_SHORT).show();
+                Toast.makeText(infoEstudiante2.this,"Start: "+ v,Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -78,7 +78,7 @@ public class perfilEstudiante extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent btn_cambio = new Intent(perfilEstudiante.this,datosAuto2.class);
+                Intent btn_cambio = new Intent(infoEstudiante2.this,datosAuto2.class);
                 startActivity(btn_cambio);
 
             }

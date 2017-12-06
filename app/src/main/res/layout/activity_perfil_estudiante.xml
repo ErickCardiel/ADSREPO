@@ -84,7 +84,9 @@
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="342dp" />
+        tools:layout_editor_absoluteY="342dp"
+        android:gravity="start"
+        android:layout_marginLeft="80dp" />
 
     <Button
         android:id="@+id/btn_cambio"
@@ -96,7 +98,8 @@
         android:drawableLeft="@drawable/conductor"
         android:text="Cambiar de cuenta"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="42dp" />
 
 
 </android.support.constraint.ConstraintLayout>
