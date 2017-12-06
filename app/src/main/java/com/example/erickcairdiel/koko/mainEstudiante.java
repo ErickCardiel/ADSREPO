@@ -1,6 +1,8 @@
 package com.example.erickcairdiel.koko;
 
 import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -14,6 +16,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -37,11 +41,22 @@ public class mainEstudiante extends AppCompatActivity implements OnMapReadyCallb
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     NavigationView mNavigationView;
+    Button solicitar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_estudiante);
+
+        solicitar = (Button)findViewById(R.id.btnSolicitarTrans);
+        solicitar.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(mainEstudiante.this,"Solicitud enviada!",Toast.LENGTH_LONG).show();
+            }
+        });
 
         //ACTIONBAR MENU
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayoutEst);
@@ -98,9 +113,10 @@ public class mainEstudiante extends AppCompatActivity implements OnMapReadyCallb
         }
         buildGoogleApiClient();
         mMap.setMyLocationEnabled(true);
-        //LatLng Home = new LatLng(32.50675787, -116.88731074);
-        //mMap.addMarker(new MarkerOptions().position(Home).title("Casa de Alexis"));
-        //mMap.moveCamera(CameraUpdateFactory.newLatLng(Home));
+        LatLng Uabc = new LatLng(32.50699311964751, -116.88700497150421);
+        //mMap.addMarker(new MarkerOptions().position(Uabc).title("Tu"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Uabc));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
     }
 
     protected synchronized void buildGoogleApiClient(){

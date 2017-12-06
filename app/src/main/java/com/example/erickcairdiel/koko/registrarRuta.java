@@ -37,7 +37,12 @@ public class registrarRuta extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem){
                 int id = menuItem.getItemId();
                 if(id == R.id.nav_perfil){
-                    Intent Activity = new Intent(registrarRuta.this, MainConductor.class);
+                    Intent Activity = new Intent(registrarRuta.this, perfilConductor.class);
+                    startActivity(Activity);
+
+                }
+                if(id == R.id.nav_pasajeros){
+                    Intent Activity = new Intent(registrarRuta.this, pasajeros.class);
                     startActivity(Activity);
 
                 }
@@ -51,7 +56,8 @@ public class registrarRuta extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(registrarRuta.this,"Ruta modificada",Toast.LENGTH_LONG).show();
+                Intent Activity = new Intent(registrarRuta.this, modRuta.class);
+                startActivity(Activity);
             }
         });
         gR = (Button)findViewById(R.id.btnGuardarRuta);
@@ -60,7 +66,9 @@ public class registrarRuta extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(registrarRuta.this,"Ruta guardada",Toast.LENGTH_LONG).show();
+                Intent Activity = new Intent(registrarRuta.this, MainConductor.class);
+                startActivity(Activity);
+                Toast.makeText(registrarRuta.this,"Ruta guardada",Toast.LENGTH_SHORT).show();
             }
         });
     }

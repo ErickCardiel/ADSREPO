@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uber"
     tools:context="com.example.erickcairdiel.koko.RDatosTarjeta">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/ingrese_los_datos_de_su_tarjeta"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="23sp"
@@ -27,29 +27,27 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="152dp"
         android:text="@string/numero_de_tarjeta_16_digitos"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="154dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="40dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_continuar"
-        android:layout_width="47dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="73dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/continuar"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:targetApi="lollipop"
-        android:layout_marginRight="8dp" />
+        tools:targetApi="lollipop" />
 
     <EditText
         android:id="@+id/InumeroTarjeta"
@@ -59,15 +57,14 @@
         android:layout_marginStart="40dp"
         android:ems="10"
         android:inputType="number"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_numtarjeta"
-        tools:ignore="MissingConstraints"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="40dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/IcodigoSeguridad"
@@ -78,21 +75,22 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_codigo"
-        tools:ignore="MissingConstraints"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="40dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:text="@string/caducidad"
@@ -102,15 +100,15 @@
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IcodigoSeguridad"
-        tools:ignore="MissingConstraints"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="40dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/txt_codigo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         android:gravity="start"
@@ -122,9 +120,7 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/InumeroTarjeta"
-        tools:ignore="MissingConstraints"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="40dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/Ianio"
@@ -139,7 +135,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Imes"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0"
@@ -150,7 +146,7 @@
         android:layout_width="83dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="176dp"
+        android:layout_marginEnd="188dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/mess"
@@ -161,36 +157,69 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints"
-        android:layout_marginRight="176dp" />
+        tools:ignore="MissingConstraints" />
 
     <RadioButton
         android:id="@+id/radioBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="56dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
         android:id="@+id/radioBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Ingrese"
-        tools:layout_editor_absoluteX="176dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <RadioButton
         android:id="@+id/radioBtn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="45dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toEndOf="@+id/radioBtn1"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="36dp" />
+        app:srcCompat="@drawable/visat" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="60dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/radioBtn3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioBtn2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/masterc" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="59dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioBtn3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/americant" />
 
 </android.support.constraint.ConstraintLayout>

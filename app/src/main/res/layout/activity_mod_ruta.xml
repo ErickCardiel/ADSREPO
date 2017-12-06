@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.erickcairdiel.koko.registrarRuta"
+    tools:context="com.example.erickcairdiel.koko.modRuta"
     android:id="@+id/drawerLayout">
 
     <android.support.design.widget.NavigationView
@@ -20,33 +20,11 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/rutad">
-        <!---->
-        <!--<fragment-->
-        <!--android:id="@+id/map"-->
-        <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent"-->
-        <!--tools:ignore="MissingConstraints" />-->
+        android:background="@drawable/modruta">
+
 
         <Button
-            android:id="@+id/btnModificarRuta"
-            android:layout_width="115dp"
-            android:layout_height="53dp"
-            android:layout_marginBottom="92dp"
-            android:layout_marginEnd="8dp"
-            android:background="@android:color/background_dark"
-            android:text="@string/Modificar"
-            android:textColor="@android:color/background_light"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <Button
-            android:id="@+id/btnGuardarRuta"
+            android:id="@+id/btnModGuardarRuta"
             android:layout_width="115dp"
             android:layout_height="53dp"
             android:layout_marginBottom="32dp"

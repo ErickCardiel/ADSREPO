@@ -3,6 +3,8 @@ package com.example.erickcairdiel.koko;
 import android.Manifest;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -66,8 +68,13 @@ public class MainConductor extends AppCompatActivity implements OnMapReadyCallba
             public boolean onNavigationItemSelected(MenuItem menuItem){
                 int id = menuItem.getItemId();
                 if(id == R.id.nav_perfil){
-                        Intent Activity = new Intent(MainConductor.this, mainEstudiante.class);
-                        startActivity(Activity);
+                    Intent Activity = new Intent(MainConductor.this, perfilConductor.class);
+                    startActivity(Activity);
+
+                }
+                if(id == R.id.nav_pasajeros){
+                    Intent Activity = new Intent(MainConductor.this, pasajeros.class);
+                    startActivity(Activity);
 
                 }
                 return true;
@@ -94,6 +101,28 @@ public class MainConductor extends AppCompatActivity implements OnMapReadyCallba
         }else{
             mapFragment.getMapAsync(this);
         }
+//
+       // AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        //alertDialogBuilder.setMessage("       *** Solicitud de transporte *** \n\n                      ★ ★ ★ ★ ★ \n\nNombre: Alexis Gutierrez Kinto\nUniversidad: UABC\nCorreo: alexis@uabc.edu.mx\nEdad: 21 años")
+        //alertDialogBuilder.setMessage("Cancelacion de transporte\n\nEl conductor ha rechazado su solicitud")
+       // alertDialogBuilder.setMessage("Ingresa una calificacion para el estudiante\n\n        Califica al estudiante ' Bianca '\n\n                      ★ ★ ★ ★ ★")
+          //  .setCancelable(false)
+         //       .setPositiveButton("Aceptar",
+       //                 new DialogInterface.OnClickListener(){
+       //                     public void onClick(DialogInterface dialog, int id){
+     //                           Intent callGPSSettingIntent = new Intent(
+      //                                  android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+      //                          startActivity(callGPSSettingIntent);
+      //                      }
+      //                  });
+      //  alertDialogBuilder.setNegativeButton("",
+      //          new DialogInterface.OnClickListener(){
+                 //   public void onClick(DialogInterface dialog, int id){
+                        //dialog.cancel();
+                    //}
+              //  });
+      //  AlertDialog alert = alertDialogBuilder.create();
+      //  alert.show();
 
     }
 
@@ -114,9 +143,10 @@ public class MainConductor extends AppCompatActivity implements OnMapReadyCallba
         buildGoogleApiClient();
         mMap.setMyLocationEnabled(true);
         // Marker at UABC
-        //LatLng Uabc = new LatLng(32.532093, -116.965881);
-        //mMap.addMarker(new MarkerOptions().position(Uabc).title("UABC-FCQI"));
-       // mMap.moveCamera(CameraUpdateFactory.newLatLng(Uabc));
+        LatLng Uabc = new LatLng(32.50699311964751, -116.88700497150421);
+        //mMap.addMarker(new MarkerOptions().position(Uabc).title("Tu"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Uabc));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
     }
 
     protected synchronized void buildGoogleApiClient(){

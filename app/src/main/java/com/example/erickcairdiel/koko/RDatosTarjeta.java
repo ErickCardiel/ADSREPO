@@ -68,7 +68,7 @@ public class RDatosTarjeta extends AppCompatActivity
     {
         int contador = 0;
         for( int i=0; i<dato.length(); i++ )
-                contador++;
+                 contador++;
 
         if(contador==3) return true;
         else return false;

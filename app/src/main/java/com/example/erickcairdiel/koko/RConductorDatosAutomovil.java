@@ -43,7 +43,7 @@ public class RConductorDatosAutomovil extends AppCompatActivity {
                     if(validaAnioYAsientos(Integer.parseInt(strAnio),Integer.parseInt(strAsientos)))
                     {
                         usuario.registroConductor(strModelo, strMarca, usuario.asignarId(), Integer.parseInt(strAsientos), Integer.parseInt(strAnio));
-                        Intent P4 = new Intent(RConductorDatosAutomovil.this,perfilConductor.class);
+                        Intent P4 = new Intent(RConductorDatosAutomovil.this,MainConductor.class);
                         startActivity(P4);
                         //Intent continuar = new Intent(RConductorDatosAutomovil.this, MainConductor.class);
                         //startActivity(continuar);

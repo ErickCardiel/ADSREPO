@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_mapa"
+        android:title="Mapa"
+        android:icon = "@drawable/map"></item>
+
+    <item android:id="@+id/nav_pasajeros2"
+        android:title="Pasajeros"
+        android:icon = "@drawable/pasajeros2"></item>
+</menu>

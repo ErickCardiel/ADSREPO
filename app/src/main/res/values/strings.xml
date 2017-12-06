@@ -19,6 +19,23 @@
     <string name="Modificar">Modificar</string>
     <string name="Guardar">Guardar</string>
     <string name="MiPerfil">Mi perfil</string>
+    <string name="MetodoDePago">Metodo de pago</string>
+    <string name="Alexis">Alexis Kinto</string>
+    <string name="stars">★★★★★</string>
+    <string name="Bianca">Bianca</string>
+    <string name="DatosDeAuto">Datos de Automovil</string>
+    <string name="Nombre2">Nombre: </string>
+    <string name="Correo2">Correo: </string>
+    <string name="anio2">Año: </string>
+    <string name="Modelo2">Modelo: </string>
+    <string name="Marca2">Marca: </string>
+    <string name="Matricula2">Matricula: </string>
+    <string name="asientos2">Asientos: </string>
+    <string name="edad2">Edad: </string>
+    <string name="cambioCuenta">Cambiar de cuenta</string>
+    <string name="uniUABC">Universidad:</string>
+    <string name="UABC">UABC</string>
+    <string name="welcome">Bienvenido a Uber Univesidad </string>
 
     <!--INCICIO SESION Y REGISTRO-->
     <string name="app_name">UBER UNIVERSIDAD</string>

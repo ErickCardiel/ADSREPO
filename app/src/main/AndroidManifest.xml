@@ -29,15 +29,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".IniciarSesionRegistro" />
-        <activity android:name=".IngreseNumeroTelefonoMovil" />
-        <activity android:name=".CodigoDeVerificacion" />
-        <activity android:name=".RdatosUsuarioGeneral" />
-        <activity android:name=".RImagenPerfilUsuario" />
-        <activity android:name=".RMetodoDePago" />
-        <activity android:name=".RDatosTarjeta" />
-        <activity android:name=".RTipoDeCuenta" />
-        <activity android:name=".RConductorDatosAutomovil" />
+        <activity
+            android:name=".IniciarSesionRegistro"
+            android:exported="true" />
+        <activity
+            android:name=".IngreseNumeroTelefonoMovil"
+            android:exported="true" />
+        <activity
+            android:name=".CodigoDeVerificacion"
+            android:exported="true" />
+        <activity
+            android:name=".RdatosUsuarioGeneral"
+            android:exported="true" />
+        <activity
+            android:name=".RImagenPerfilUsuario"
+            android:exported="true" />
+        <activity
+            android:name=".RMetodoDePago"
+            android:exported="true" />
+        <activity
+            android:name=".RDatosTarjeta"
+            android:exported="true" />
+        <activity
+            android:name=".RTipoDeCuenta"
+            android:exported="true" />
+        <activity
+            android:name=".RConductorDatosAutomovil"
+            android:exported="true" />
 
         <!-- <activity android:name=".ajustesDeTransporte"></activity> -->
         <!--
@@ -61,13 +79,26 @@
             android:name=".mainEstudiante"
             android:exported="true"
             android:label="@string/title_activity_main_estudiante" />
-        <activity android:name=".perfilEstudiante" />
-        <activity android:name=".perfilConductor" />
-        <activity android:name=".infoConductor" />
-        <activity android:name=".pasajeros" />
-        <activity android:name=".formasPago" />
-        <activity android:name=".botonesPrueba" />
-        <activity android:name=".registrarRuta"></activity>
+        <activity
+            android:name=".perfilEstudiante"
+            android:exported="true" />
+        <activity
+            android:name=".perfilConductor"
+            android:exported="true" />
+        <activity
+            android:name=".infoConductor"
+            android:exported="true" />
+        <activity
+            android:name=".pasajeros"
+            android:exported="true" />
+        <activity
+            android:name=".formasPago"
+            android:exported="true" />
+        <activity
+            android:name=".botonesPrueba"
+            android:exported="true" />
+        <activity android:name=".registrarRuta" />
+        <activity android:name=".modRuta"></activity>
     </application>
 
 </manifest>
