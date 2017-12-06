@@ -153,14 +153,14 @@
         android:layout_marginBottom="68dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txt_Asientos"
         app:srcCompat="@drawable/auto" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCancelarRaite"
         android:layout_width="167dp"
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"
@@ -171,6 +171,16 @@
         android:text="   ¡Cancelar Raite!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRaiteEnProgreso"
+        android:layout_width="142dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="44dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

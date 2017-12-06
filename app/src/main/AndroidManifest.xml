@@ -98,7 +98,8 @@
             android:name=".botonesPrueba"
             android:exported="true" />
         <activity android:name=".registrarRuta" />
-        <activity android:name=".modRuta"></activity>
+        <activity android:name=".modRuta" />
+        <activity android:name=".raiteEnProgreso"></activity>
     </application>
 
 </manifest>
